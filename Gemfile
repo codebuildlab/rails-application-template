@@ -71,3 +71,6 @@ end
 
 # Colors for rake tasks
 gem 'rainbow'
+
+# Progress bar for rake tasks
+gem 'ruby-progressbar'

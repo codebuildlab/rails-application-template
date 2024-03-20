@@ -139,3 +139,6 @@ gem 'oj'
 
 # Fast pagination fo Active Record
 gem 'pagy'
+
+# Decorators for remove view logic from controllers
+gem 'draper'

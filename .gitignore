@@ -89,3 +89,6 @@ yarn-debug.log*
 !/app/assets/builds/.keep
 
 /node_modules
+
+# Ignore gemset (RVM)
+.ruby-gemset

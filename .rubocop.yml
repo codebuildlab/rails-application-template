@@ -16,3 +16,15 @@ inherit_from:
 require:
   - rubocop-rails
   - rubocop-rspec 
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.3.0
+  TargetRailsVersion: 7.1.3.2
+  Exclude:
+    - 'bin/**/*'        
+    - 'log/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'        
+    - 'node_modules/**/*'        
+    - 'lib/tasks/auto_annotate_models.rake'

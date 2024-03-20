@@ -54,6 +54,9 @@ RSpec.configure do |config|
     end
   end
 
+  config.include Devise::Test::ControllerHelpers, type: :controller
+  config.extend ControllerMacros, type: :controller
+
   config.before(:suite) do
     DatabaseCleaner.strategy = :deletion
     DatabaseCleaner.clean

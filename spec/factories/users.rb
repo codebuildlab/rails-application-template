@@ -49,6 +49,13 @@
 #
 FactoryBot.define do
   factory :user do
-    
+    email { Faker::Internet.email }
+    password { Faker::Internet.password }
+    password_confirmation { password }
+    confirmed_at { DateTime.current }
+
+    after(:build) { |user| user.skip_confirmation_notification! }
+    after(:create) { |user| user.skip_confirmation_notification! }
+    before(:create) { |user| user.skip_confirmation_notification! }
   end
 end

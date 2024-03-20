@@ -121,3 +121,6 @@ gem 'rainbow'
 
 # Progress bar for rake tasks
 gem 'ruby-progressbar'
+
+# Generate fake data
+gem 'faker'

@@ -124,3 +124,6 @@ gem 'ruby-progressbar'
 
 # Generate fake data
 gem 'faker'
+
+# Client for HTTP/HTTPS
+gem 'faraday'

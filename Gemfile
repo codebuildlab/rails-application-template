@@ -145,3 +145,6 @@ gem 'draper'
 
 # Named scopes for postgresql full text search
 gem 'pg_search'
+
+# Strips all attributes of leading and trailing whitespace
+gem 'strip_attributes'

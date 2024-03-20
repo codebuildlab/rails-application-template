@@ -53,7 +53,7 @@ group :development, :test do
 
   # Print object
   gem 'awesome_print'
-  
+
   # Env variables
   gem 'dotenv-rails'
 end
@@ -69,3 +69,5 @@ group :development do
   # gem "spring"
 end
 
+# Colors for rake tasks
+gem 'rainbow'

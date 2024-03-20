@@ -59,6 +59,9 @@ group :development, :test do
 
   # Detect N+1 queries
   gem 'bullet'
+
+  # Detect necesssary indexes
+  gem 'lol_dba'
 end
 
 group :development do

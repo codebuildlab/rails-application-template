@@ -7,3 +7,29 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+if Rails.env.development?
+    # HACK: Required to foce load env vars
+    require 'dotenv/load'
+end
+
+Rails.logger.debug 'Deleting data ...'
+puts 'Deleting data ...'.red
+
+ActiveRecord::Base.connection.execute('DELETE FROM users')
+
+ActiveRecord::Base.connection.execute('DELETE FROM active_storage_variant_records')
+ActiveRecord::Base.connection.execute('DELETE FROM active_storage_attachments')
+ActiveRecord::Base.connection.execute('DELETE FROM active_storage_blobs')
+
+Rails.logger.debug 'Creating users ...'
+puts 'Creating users ...'.blue
+
+admin_user = User.new(
+  :email => 'admin@local',
+  :password => 'hrQbE9wDRsdPThZpcUEP',
+  :password_confirmation => 'hrQbE9wDRsdPThZpcUEP',
+  :confirmed_at => DateTime.now)
+
+admin_user.skip_confirmation_notification!
+admin_user.save!

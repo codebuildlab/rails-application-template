@@ -10,6 +10,8 @@ require 'rspec/rails'
 require 'simplecov'
 SimpleCov.start 'rails'
 
+require 'pundit/matchers'
+
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
 # run as spec files by default. This means that files in spec/support that end
@@ -56,6 +58,14 @@ RSpec.configure do |config|
 
   config.include Devise::Test::ControllerHelpers, type: :controller
   config.extend ControllerMacros, type: :controller
+
+  Pundit::Matchers.configure do |config|
+    # Change the default user alias
+    # config.default_user_alias = :account
+
+    # Change the user alias for a specific policy
+    # config.user_aliases = { 'Post' => :account }
+  end
 
   config.before(:suite) do
     DatabaseCleaner.strategy = :deletion

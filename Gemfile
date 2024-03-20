@@ -88,6 +88,9 @@ group :test do
 
   # Code coverage
   gem 'simplecov', require: false
+
+  # Matchers for Pundit
+  gem 'pundit-matchers'
 end
 
 group :development do
@@ -166,3 +169,6 @@ gem 'devise'
 
 # Auth providers
 gem 'omniauth'
+
+# Authorization solution
+gem 'pundit'

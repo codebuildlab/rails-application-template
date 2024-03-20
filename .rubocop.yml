@@ -11,6 +11,8 @@
 
 inherit_from:
   - '.rubocop-rails.yml'  
+  - '.rubocop-rspec.yml'
 
 require:
-  - rubocop-rails  
+  - rubocop-rails
+  - rubocop-rspec 

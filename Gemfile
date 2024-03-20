@@ -96,6 +96,9 @@ group :development do
 
   # Rails support for Rubocop
   gem 'rubocop-rails'
+
+  # Rubocop integration with rspec
+  gem 'rubocop-rspec'
 end
 
 # Colors for rake tasks

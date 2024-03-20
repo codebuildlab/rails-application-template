@@ -160,3 +160,9 @@ gem 'aasm'
 
 # Fast copy data using active record
 gem 'activerecord-import'
+
+# Authentication
+gem 'devise'
+
+# Auth providers
+gem 'omniauth'

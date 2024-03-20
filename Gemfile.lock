@@ -194,6 +194,7 @@ GEM
       racc (~> 1.4)
     oj (3.16.3)
       bigdecimal (>= 3.0)
+    pagy (7.0.11)
     parallel (1.24.0)
     parser (3.3.0.5)
       ast (~> 2.4.1)
@@ -369,6 +370,7 @@ DEPENDENCIES
   lol_dba
   nokogiri
   oj
+  pagy
   pg (~> 1.1)
   propshaft
   puma (>= 5.0)

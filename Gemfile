@@ -136,3 +136,6 @@ gem 'jsonapi-serializer'
 
 # Json serializer for hashes
 gem 'oj'
+
+# Fast pagination fo Active Record
+gem 'pagy'

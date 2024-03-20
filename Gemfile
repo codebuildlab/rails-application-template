@@ -172,3 +172,7 @@ gem 'omniauth'
 
 # Authorization solution
 gem 'pundit'
+
+# Jobs manager
+gem 'sidekiq'
+

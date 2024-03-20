@@ -133,3 +133,6 @@ gem 'nokogiri'
 
 # Json serializer for objects
 gem 'jsonapi-serializer'
+
+# Json serializer for hashes
+gem 'oj'

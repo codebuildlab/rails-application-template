@@ -53,4 +53,14 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
          :confirmable, :lockable, :timeoutable, :trackable, :omniauthable
+
+  validates :uid, presence: true  
+
+  after_initialize :set_defaults
+  
+  private 
+
+  def set_defaults
+    self.uid = SecureRandom.uuid
+  end
 end

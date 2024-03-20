@@ -38,5 +38,8 @@ module RailsApplicationTemplate
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Don't works using a initializer for testing database
+    config.active_record.schema_format = :sql
   end
 end

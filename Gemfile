@@ -130,3 +130,6 @@ gem 'faraday'
 
 # Parser of HTML/XML
 gem 'nokogiri'
+
+# Json serializer for objects
+gem 'jsonapi-serializer'

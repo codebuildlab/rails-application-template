@@ -154,3 +154,6 @@ gem 'acts_as_list'
 
 # Nested models (parent and children) for Active Record models
 gem 'awesome_nested_set'
+
+# Machine states
+gem 'aasm'

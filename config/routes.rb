@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'home/index'
+  
   devise_for :users, :path => "auth", controllers: {
     sessions: 'auth/sessions',
     confirmations: 'auth/confirmations',
@@ -19,7 +21,7 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-  # root "posts#index"
+  root "home#index"
 
   if Rails.env.development?
     require 'sidekiq/web'        

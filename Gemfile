@@ -82,6 +82,9 @@ group :test do
 
   # Helper to clear and build database
   gem 'database_cleaner-active_record'
+
+  # Code coverage
+  gem 'simplecov', require: false
 end
 
 group :development do

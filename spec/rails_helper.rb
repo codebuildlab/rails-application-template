@@ -51,6 +51,23 @@ RSpec.configure do |config|
     end
   end
 
+  config.before(:suite) do
+    DatabaseCleaner.strategy = :deletion
+    DatabaseCleaner.clean
+  end
+
+  config.before do
+    DatabaseCleaner.strategy = :deletion # Default strategy
+  end
+
+  config.before do
+    DatabaseCleaner.start
+  end
+
+  config.append_after do
+    DatabaseCleaner.clean
+  end
+
   # You can uncomment this line to turn off ActiveRecord support entirely.
   # config.use_active_record = false
 

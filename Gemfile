@@ -79,6 +79,9 @@ group :test do
 
   # Mock web requests
   gem 'webmock'
+
+  # Helper to clear and build database
+  gem 'database_cleaner-active_record'
 end
 
 group :development do

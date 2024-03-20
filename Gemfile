@@ -76,6 +76,9 @@ group :test do
 
   # Object mocks for Rspec
   gem 'rspec-mocks'
+
+  # Mock web requests
+  gem 'webmock'
 end
 
 group :development do

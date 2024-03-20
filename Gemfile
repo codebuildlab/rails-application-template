@@ -79,6 +79,12 @@ group :development do
 
   # Retrieve the binding of a method's caller. Required for 'better errors'.
   gem 'binding_of_caller'
+
+  # Ruby code analyzer
+  gem 'rubocop'
+
+  # Rails support for Rubocop
+  gem 'rubocop-rails'
 end
 
 # Colors for rake tasks

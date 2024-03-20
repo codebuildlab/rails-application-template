@@ -142,3 +142,6 @@ gem 'pagy'
 
 # Decorators for remove view logic from controllers
 gem 'draper'
+
+# Named scopes for postgresql full text search
+gem 'pg_search'

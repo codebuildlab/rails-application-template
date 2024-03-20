@@ -1,6 +1,27 @@
 # rails-application-template
 Ruby on Rails application template
 
+## Stack
+
+- Ruby 3.3.0
+- Rails 7.1.3.2
+- PropShaft
+- Bun 1.0.30
+- TailwindCSS 3.4.1
+- PostgreSQL 14
+- Active Storage
+- Active Job with SideKiq 7 and Redis
+
+## Install
+
+### Requirements
+
+- Ruby 3.3.0
+- Rails 7.1.3.2
+- Bun 1x
+- PostgreSQL 14 and this extensions installed: uuid-ossp, pgcrypto, unaccent, fuzzystrmatch, pg_trgm, hstore, postgis, btree_gin, btree_gist, intarray, tablefunc, and cube.
+- Redis 7.x
+
 ## Authors
 
 See also the list of [contributors](https://github.com/codebuildlab/rails-application-template/contributors) who participated in this project.

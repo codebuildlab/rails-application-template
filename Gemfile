@@ -56,6 +56,9 @@ group :development, :test do
 
   # Env variables
   gem 'dotenv-rails'
+
+  # Detect N+1 queries
+  gem 'bullet'
 end
 
 group :development do

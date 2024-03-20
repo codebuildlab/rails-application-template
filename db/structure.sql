@@ -38,6 +38,20 @@ COMMENT ON EXTENSION btree_gist IS 'support for indexing common datatypes in GiS
 
 
 --
+-- Name: cube; Type: EXTENSION; Schema: -; Owner: -
+--
+
+CREATE EXTENSION IF NOT EXISTS cube WITH SCHEMA public;
+
+
+--
+-- Name: EXTENSION cube; Type: COMMENT; Schema: -; Owner: -
+--
+
+COMMENT ON EXTENSION cube IS 'data type for multidimensional cubes';
+
+
+--
 -- Name: fuzzystrmatch; Type: EXTENSION; Schema: -; Owner: -
 --
 
@@ -211,6 +225,7 @@ ALTER TABLE ONLY public.schema_migrations
 SET search_path TO "$user", public;
 
 INSERT INTO "schema_migrations" (version) VALUES
+('20240320003733'),
 ('20240320003622'),
 ('20240320003522'),
 ('20240320003404'),

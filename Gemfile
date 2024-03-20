@@ -117,6 +117,9 @@ group :development do
 
   # Rubocop integration with rspec
   gem 'rubocop-rspec'
+
+  # Rubocop performance rules
+  gem 'rubocop-performance'
 end
 
 # Colors for rake tasks

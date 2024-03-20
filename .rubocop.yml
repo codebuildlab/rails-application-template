@@ -12,10 +12,12 @@
 inherit_from:
   - '.rubocop-rails.yml'  
   - '.rubocop-rspec.yml'
+  - '.rubocop-performance.yml'
 
 require:
   - rubocop-rails
   - rubocop-rspec 
+  - rubocop-performance
 
 AllCops:
   NewCops: enable

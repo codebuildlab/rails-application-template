@@ -73,6 +73,9 @@ end
 group :test do
   # Extensions for assertions
   gem 'shoulda-matchers'
+
+  # Object mocks for Rspec
+  gem 'rspec-mocks'
 end
 
 group :development do

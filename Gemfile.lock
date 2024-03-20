@@ -330,6 +330,7 @@ DEPENDENCIES
   rails (~> 7.1.3, >= 7.1.3.2)
   rainbow
   redis (>= 4.0.1)
+  rspec-mocks
   rspec-rails
   rubocop
   rubocop-rails

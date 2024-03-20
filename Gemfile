@@ -68,6 +68,9 @@ group :development, :test do
 
   # Fixtures for testing
   gem 'factory_bot_rails'
+
+  # Add schema information on models
+  gem 'annotate'
 end
 
 group :test do

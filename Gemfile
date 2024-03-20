@@ -148,3 +148,6 @@ gem 'pg_search'
 
 # Strips all attributes of leading and trailing whitespace
 gem 'strip_attributes'
+
+# Lists for active record
+gem 'acts_as_list'

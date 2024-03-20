@@ -157,3 +157,6 @@ gem 'awesome_nested_set'
 
 # Machine states
 gem 'aasm'
+
+# Fast copy data using active record
+gem 'activerecord-import'

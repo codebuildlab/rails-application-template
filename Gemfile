@@ -127,3 +127,6 @@ gem 'faker'
 
 # Client for HTTP/HTTPS
 gem 'faraday'
+
+# Parser of HTML/XML
+gem 'nokogiri'

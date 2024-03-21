@@ -110,16 +110,16 @@ group :development do
   gem 'binding_of_caller'
 
   # Ruby code analyzer
-  gem 'rubocop'
+  gem 'rubocop', require: false
 
   # Rails support for Rubocop
-  gem 'rubocop-rails'
+  gem 'rubocop-rails', require: false
 
   # Rubocop integration with rspec
-  gem 'rubocop-rspec'
+  gem 'rubocop-rspec', require: false
 
   # Rubocop performance rules
-  gem 'rubocop-performance'
+  gem 'rubocop-performance', require: false
 
   # Rake tasks
   gem 'rubocop-rake', require: false

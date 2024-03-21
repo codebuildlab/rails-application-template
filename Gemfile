@@ -120,6 +120,9 @@ group :development do
 
   # Rubocop performance rules
   gem 'rubocop-performance'
+
+  # Rake tasks
+  gem 'rubocop-rake', require: false
 end
 
 # Colors for rake tasks
@@ -178,4 +181,3 @@ gem 'pundit'
 
 # Jobs manager
 gem 'sidekiq'
-

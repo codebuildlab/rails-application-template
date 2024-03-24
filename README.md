@@ -22,6 +22,15 @@ Ruby on Rails application template
 - PostgreSQL 14 and this extensions installed: uuid-ossp, pgcrypto, unaccent, fuzzystrmatch, pg_trgm, hstore, postgis, btree_gin, btree_gist, intarray, tablefunc, and cube.
 - Redis 7.x
 
+### Environment variables
+
+* DB_HOST
+* DB_NAME
+* DB_USERNAME
+* DB_USERPASSWORD
+* REDIS_URL
+
+
 ## Authors
 
 See also the list of [contributors](https://github.com/codebuildlab/rails-application-template/contributors) who participated in this project.

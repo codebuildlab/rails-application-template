@@ -48,17 +48,16 @@
 #     * **`unlock_token`**
 #
 class User < ApplicationRecord
-  # Include default devise modules. Others available are:
-  # 
-  devise :database_authenticatable, :registerable,
+  # Include default devise modules. Others available are: :registerable,
+  devise :database_authenticatable,
          :recoverable, :rememberable, :validatable,
          :confirmable, :lockable, :timeoutable, :trackable, :omniauthable
 
-  validates :uid, presence: true  
+  validates :uid, presence: true
 
   after_initialize :set_defaults
-  
-  private 
+
+  private
 
   def set_defaults
     self.uid = SecureRandom.uuid

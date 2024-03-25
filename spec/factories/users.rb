@@ -54,8 +54,8 @@ FactoryBot.define do
     password_confirmation { password }
     confirmed_at { DateTime.current }
 
-    after(:build) { |user| user.skip_confirmation_notification! }
-    after(:create) { |user| user.skip_confirmation_notification! }
-    before(:create) { |user| user.skip_confirmation_notification! }
+    after(:build, &:skip_confirmation_notification!)
+    after(:create, &:skip_confirmation_notification!)
+    before(:create, &:skip_confirmation_notification!)
   end
 end

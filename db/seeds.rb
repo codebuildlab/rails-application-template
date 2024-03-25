@@ -9,8 +9,8 @@
 #   end
 
 if Rails.env.development?
-    # HACK: Required to foce load env vars
-    require 'dotenv/load'
+  # HACK: Required to foce load env vars
+  require 'dotenv/load'
 end
 
 Rails.logger.debug 'Deleting data ...'
@@ -26,10 +26,11 @@ Rails.logger.debug 'Creating users ...'
 puts 'Creating users ...'.blue
 
 admin_user = User.new(
-  :email => 'admin@local',
-  :password => 'hrQbE9wDRsdPThZpcUEP',
-  :password_confirmation => 'hrQbE9wDRsdPThZpcUEP',
-  :confirmed_at => DateTime.now)
+  email: 'admin@local',
+  password: 'hrQbE9wDRsdPThZpcUEP',
+  password_confirmation: 'hrQbE9wDRsdPThZpcUEP',
+  confirmed_at: DateTime.now
+)
 
 admin_user.skip_confirmation_notification!
 admin_user.save!

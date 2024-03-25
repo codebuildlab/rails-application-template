@@ -1,4 +1,4 @@
-Rails.application.config.generators do |g|  
+Rails.application.config.generators do |g|
   g.helper false
   g.decorator false
 
@@ -9,6 +9,6 @@ Rails.application.config.generators do |g|
                    routing_specs: true,
                    controller_specs: true,
                    request_specs: true
-                   
-  g.fixture_replacement :factory_girl, dir: "spec/factories"
+
+  g.fixture_replacement :factory_girl, dir: 'spec/factories'
 end

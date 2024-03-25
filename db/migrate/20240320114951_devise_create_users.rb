@@ -6,8 +6,8 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.1]
       t.uuid :uid, null: false, default: 'uuid_generate_v4()'
 
       ## Database authenticatable
-      t.string :email,              null: false, default: ""
-      t.string :encrypted_password, null: false, default: ""
+      t.string :email,              null: false, default: ''
+      t.string :encrypted_password, null: false, default: ''
 
       ## Recoverable
       t.string   :reset_password_token
@@ -39,7 +39,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.1]
       t.string :uid_provider
 
       # Record version
-      t.integer :lock_version, :default => 0
+      t.integer :lock_version, default: 0
 
       t.timestamps null: false
     end
@@ -49,6 +49,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.1]
     add_index :users, :reset_password_token, unique: true
     add_index :users, :confirmation_token,   unique: true
     add_index :users, :unlock_token,         unique: true
-    add_index :users, [:provider, :uid_provider], unique: true
+    add_index :users, %i[provider uid_provider], unique: true
   end
 end

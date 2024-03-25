@@ -49,6 +49,31 @@
 #
 require 'rails_helper'
 
-RSpec.describe User, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+RSpec.describe User do
+  describe 'new' do
+    let(:user) { create(:user) }
+
+    it 'uid should not be nil' do
+      expect(user.uid).not_to be_nil
+    end
+  end
+
+  describe 'valid?' do
+    let(:user) { create(:user) }
+
+    context 'when uuid set to nil' do
+      before do
+        user.uid = nil
+        user.valid?
+      end
+
+      it 'errors not be nil' do
+        expect(user.errors['uid']).not_to be_nil
+      end
+
+      it 'errors should contain the uid attribute' do
+        expect(user.errors['uid'].length).to be > 0
+      end
+    end
+  end
 end

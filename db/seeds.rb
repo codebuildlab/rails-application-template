@@ -14,7 +14,6 @@ if Rails.env.development?
 end
 
 Rails.logger.debug 'Deleting data ...'
-puts 'Deleting data ...'.red
 
 ActiveRecord::Base.connection.execute('DELETE FROM users')
 
@@ -23,7 +22,6 @@ ActiveRecord::Base.connection.execute('DELETE FROM active_storage_attachments')
 ActiveRecord::Base.connection.execute('DELETE FROM active_storage_blobs')
 
 Rails.logger.debug 'Creating users ...'
-puts 'Creating users ...'.blue
 
 admin_user = User.new(
   email: 'admin@local',

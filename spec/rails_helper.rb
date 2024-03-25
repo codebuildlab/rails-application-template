@@ -57,12 +57,12 @@ RSpec.configure do |config|
   config.include Devise::Test::ControllerHelpers, type: :controller
   config.extend ControllerMacros, type: :controller
 
-  Pundit::Matchers.configure do |config|
+  Pundit::Matchers.configure do |config_pundit|
     # Change the default user alias
-    # config.default_user_alias = :account
+    # config_pundit.default_user_alias = :account
 
     # Change the user alias for a specific policy
-    # config.user_aliases = { 'Post' => :account }
+    # config_pundit.user_aliases = { 'Post' => :account }
   end
 
   config.before(:suite) do

@@ -16,6 +16,7 @@ inherit_from:
 
 require:
   - rubocop-rails
+  - rubocop-factory_bot
   - rubocop-rspec 
   - rubocop-performance
   - rubocop-rake
@@ -25,9 +26,15 @@ AllCops:
   TargetRubyVersion: 3.3.0
   TargetRailsVersion: 7.1.3.2
   Exclude:
-    - 'bin/**/*'        
+    - 'bin/**/*'
+    - config/boot.rb
+    - config.ru
+    - Rakefile
     - 'log/**/*'
     - 'tmp/**/*'
     - 'vendor/**/*'        
     - 'node_modules/**/*'        
     - 'lib/tasks/auto_annotate_models.rake'
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
